@@ -18,7 +18,7 @@ const Categories = () => {
   };
 
   return (
-    <div className="nav bg-base-300 flex flex-row justify-start">
+    <div className=" bg-base-300 flex flex-row justify-start">
       <div
         className="btn btn-ghost btn-lg normal-case"
         onClick={handleMoviesChange}

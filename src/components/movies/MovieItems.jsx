@@ -24,7 +24,7 @@ const MovieItems = ({ movieData }) => {
   return (
     <>
       <Link to={`show/${media_type}/${id}`} onClick={() => handleClick()}>
-        <div className="card w-96 rounded-lg bg-base-100 shadow-xl m-6 ">
+        <div className="card w-96 text-black	 rounded-lg m-6 flex algin-baseline shadow-xl shadow-black bg-accent bg-opacity-50">
           <figure>
             {poster_path ? (
               <img src={IMAGE_PATH + poster_path}></img>
@@ -32,14 +32,13 @@ const MovieItems = ({ movieData }) => {
               <img src={IMAGE_PATH + "/6NR0k3A7Rk10XOiDOxSrmprFu93.jpg"}></img>
             )}
           </figure>
-          <div className="card-body bg-base-200 flex flex-row justify-between">
+          <div className="card-body  flex flex-row justify-between">
             {title ? (
-              <h2 className="card-title">{title}</h2>
+              <h2 className="card-title ">{title}</h2>
             ) : (
               <h2 className="card-title">{name}</h2>
             )}
-            {/* <h2 className="card-title">{title}</h2> */}
-            <div className="crad-actions justify-end"></div>
+            <div className="text-xl uppercase	">{media_type}</div>
           </div>
         </div>
       </Link>
