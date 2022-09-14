@@ -24,7 +24,7 @@ const MovieItems = ({ movieData }) => {
   return (
     <>
       <Link to={`show/${media_type}/${id}`} onClick={() => handleClick()}>
-        <div className="card w-96 text-black	 rounded-lg m-6 flex algin-baseline shadow-xl shadow-black bg-accent bg-opacity-50">
+        <div className="card w-96 text-black 		 rounded-lg m-6 flex algin-baseline shadow-xl shadow-black bg-accent bg-opacity-50">
           <figure>
             {poster_path ? (
               <img src={IMAGE_PATH + poster_path}></img>
